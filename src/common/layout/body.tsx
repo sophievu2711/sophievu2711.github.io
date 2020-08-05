@@ -1,12 +1,11 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
+import "../../style/Body.css";
 
 const TheBody: React.FC = (props) => {
-  const a = 10;
   return (
-    <AppBar>
-      
-    </AppBar>
+    <div className="background">
+      {props.children}  
+    </div>
   );
 };
 

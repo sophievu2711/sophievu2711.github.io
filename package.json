@@ -5,6 +5,7 @@
   "homepage": "http://sophievu2711.github.io/sophievu2711.github.io",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -17,9 +18,13 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-slick": "^0.27.1",
+    "react-social-icons": "^4.1.0",
     "react-spring": "^8.0.27",
     "react-swipeable-views": "^0.13.9",
     "react-swipeable-views-utils": "^0.13.9",
+    "react-use-gesture": "^7.0.15",
+    "react-visibility-sensor": "^5.1.1",
+    "sass": "^1.26.10",
     "typescript": "~3.7.2"
   },
   "scripts": {
