@@ -16,7 +16,7 @@ function App() {
         <Banner />
         <Profile />
         {/* <MySkills /> */}
-        {/* <Projects /> */}
+        <Projects />
       </TheBody>
     </React.Fragment>
   );

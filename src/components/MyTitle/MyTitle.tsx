@@ -3,9 +3,9 @@ import TitlePagination from './TitlePagination';
 import Fadein from '../../common/effect/Fadein';
 
 const myTitles = [
+  "A creative web developer with a focus on frontend",
   "A business systems analyst",
   "An UI/UX designer",
-  "A creative web developer with the focus on frontend",
 ];
 
 const MyTitle: React.FC = () => {
