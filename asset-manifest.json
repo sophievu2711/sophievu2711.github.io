@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/sophievu2711.github.io/static/css/main.b8fc0567.chunk.css",
+    "main.js": "/sophievu2711.github.io/static/js/main.315911a7.chunk.js",
+    "main.js.map": "/sophievu2711.github.io/static/js/main.315911a7.chunk.js.map",
+    "runtime-main.js": "/sophievu2711.github.io/static/js/runtime-main.c2e1cd5a.js",
+    "runtime-main.js.map": "/sophievu2711.github.io/static/js/runtime-main.c2e1cd5a.js.map",
+    "static/js/2.ebc26934.chunk.js": "/sophievu2711.github.io/static/js/2.ebc26934.chunk.js",
+    "static/js/2.ebc26934.chunk.js.map": "/sophievu2711.github.io/static/js/2.ebc26934.chunk.js.map",
+    "index.html": "/sophievu2711.github.io/index.html",
+    "precache-manifest.30b5ae6e280cc6954d249ec301cad3b6.js": "/sophievu2711.github.io/precache-manifest.30b5ae6e280cc6954d249ec301cad3b6.js",
+    "service-worker.js": "/sophievu2711.github.io/service-worker.js",
+    "static/css/main.b8fc0567.chunk.css.map": "/sophievu2711.github.io/static/css/main.b8fc0567.chunk.css.map",
+    "static/js/2.ebc26934.chunk.js.LICENSE.txt": "/sophievu2711.github.io/static/js/2.ebc26934.chunk.js.LICENSE.txt",
+    "static/media/adjust.png": "/sophievu2711.github.io/static/media/adjust.d2146beb.png",
+    "static/media/profile3.png": "/sophievu2711.github.io/static/media/profile3.d2d3365f.png",
+    "static/media/sg.png": "/sophievu2711.github.io/static/media/sg.ef5bde7e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2e1cd5a.js",
+    "static/js/2.ebc26934.chunk.js",
+    "static/css/main.b8fc0567.chunk.css",
+    "static/js/main.315911a7.chunk.js"
+  ]
+}
