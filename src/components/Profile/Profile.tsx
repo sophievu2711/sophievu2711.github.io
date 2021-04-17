@@ -10,7 +10,7 @@ import "../../style/Body.css";
 
 import Avatar from '../../assets/profile3.png';
 
-import SidePagination from '.././SidePagination';
+// import SidePagination from '.././SidePagination';
 import SimpleModal from '../../common/SimpleModal';
 import ProfileDetails from './ProfileDetails';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Theme, makeStyles, createStyles } from '@material-ui/core/styles';
 import { Grid, Button } from '@material-ui/core';
-import TheBody from '../../common/layout/Body';
+// import TheBody from '../../common/layout/Body';
 
 import giphy from '../../assets/portfolio/adjust.png';
 import slickgoose from '../../assets/portfolio/sg.png';
