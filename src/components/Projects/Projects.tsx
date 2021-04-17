@@ -1,6 +1,11 @@
 import React from 'react';
 import { Theme, makeStyles, createStyles } from '@material-ui/core/styles';
-import classes from '*.module.css';
+// import classes from '*.module.css';
+// import { Grid, Button } from '@material-ui/core';
+// import TheBody from '../../common/layout/Body';
+
+// import giphy from '../../assets/portfolio/adjust.png';
+// import slickgoose from '../../assets/portfolio/sg.png';
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
   container: {
