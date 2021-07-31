@@ -1,37 +1,47 @@
-import React from 'react';
-import { Theme, makeStyles, createStyles } from '@material-ui/core/styles';
-import { Grid, Button } from '@material-ui/core';
+import React from "react";
+import { Theme, makeStyles, createStyles } from "@material-ui/core/styles";
+import { Grid, Button } from "@material-ui/core";
 // import TheBody from '../../common/layout/Body';
 
-import giphy from '../../assets/portfolio/adjust.png';
-import slickgoose from '../../assets/portfolio/sg.png';
+import giphy from "../../assets/portfolio/adjust.png";
+import slickgoose from "../../assets/portfolio/sg.png";
 
-const useStyles = makeStyles((theme: Theme) => createStyles({
-  container: {
-    padding: '10vh',
-    fontFamily: 'Quicksand',
-    fontSize: '2vh',
-  },
-  title: {
-    fontFamily: 'Caveat',
-    fontSize: '10vh',
-  },
-  videoContainer: {
-    position: 'relative',
-    width: '100%',
-    height: 0,
-    paddingBottom: '56.25%',
-  },
-  video: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-  }
-}));
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    container: {
+      padding: "10vh",
+      fontFamily: "Quicksand",
+      fontSize: "2vh",
+    },
+    title: {
+      fontFamily: "Caveat",
+      fontSize: "10vh",
+    },
+    videoContainer: {
+      position: "relative",
+      width: "100%",
+      height: 0,
+      paddingBottom: "56.25%",
+    },
+    video: {
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+    },
+  })
+);
 
 const projects = [
+  {
+    name: "Travos",
+    video: "https://www.youtube.com/embed/S6IKfMndTKs",
+    description: [
+      "This is a pitching video made by TRAVOS (Team 112) - a team of 4 young people from Indonesia, Australia and Vietnam - for AASYP Reset.",
+      "AASYP Reset is a virtual innovation challenge inviting recent graduates current university students and young professionals of all disciplines across ASEAN and Australia to collaborate on projects that foster stronger people to people connections between youth in our region.",
+    ],
+  },
   {
     name: "Finding Giphy",
     live_demo: "https://sophievu2711.github.io/finding-giphy",
@@ -47,7 +57,7 @@ const projects = [
     video: "https://youtube.com/embed/LclpliE9mUk",
     description: [
       "A cross-platform web app that aims to provide less economically nations with a low-cost, lightweight and user-friendly solution for digital training and learning.",
-      "Developed by SlickGoose - an agile team run by six students from Faculty of Engineering and Information Sciences at University of Wollongong.", 
+      "Developed by SlickGoose - an agile team run by six students from Faculty of Engineering and Information Sciences at University of Wollongong.",
     ],
   },
   {
@@ -65,44 +75,51 @@ const Projects: React.FC = () => {
   const classes = useStyles();
   return (
     <>
-      {
-        projects.map((project, index) => (
-          <Grid
-            container
-            direction={index%2 ? "row-reverse" : "row"}
-            className={classes.container}
-            spacing={3}
-            alignItems="center"
-          >
-            <Grid item sm={6} xs={12}>
-              {
-                project.img && <img src={project.img} alt={project.name} width="100%" />
-              }
-              {
-                project.video && 
-                <div className={classes.videoContainer}>
-                  <iframe className={classes.video} src={project.video} title={project.name} frameBorder="0" />
-                </div>
-              }
-            </Grid>
-            <Grid item sm={6} xs={12}>
-              <div className={classes.title}>
-                {project.name}
+      {projects.map((project, index) => (
+        <Grid
+          container
+          direction={index % 2 ? "row-reverse" : "row"}
+          className={classes.container}
+          spacing={3}
+          alignItems="center"
+        >
+          <Grid item sm={6} xs={12}>
+            {project.img && (
+              <img src={project.img} alt={project.name} width="100%" />
+            )}
+            {project.video && (
+              <div className={classes.videoContainer}>
+                <iframe
+                  className={classes.video}
+                  src={project.video}
+                  title={project.name}
+                  frameBorder="0"
+                />
               </div>
-              <div>
-                {project.description.map((paragraph, index) => (
-                  <p>{paragraph}</p>
-                ))}
-              </div>
-              <div>
-                <a href={project.live_demo} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+            )}
+          </Grid>
+          <Grid item sm={6} xs={12}>
+            <div className={classes.title}>{project.name}</div>
+            <div>
+              {project.description.map((paragraph, index) => (
+                <p>{paragraph}</p>
+              ))}
+            </div>
+            <div>
+              {project.live_demo && (
+                <a
+                  href={project.live_demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
                   <Button style={{ color: "white" }}>Live Demo</Button>
                 </a>
-              </div>
-            </Grid>
+              )}
+            </div>
           </Grid>
-        ))
-      }
+        </Grid>
+      ))}
     </>
   );
 };
